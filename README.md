@@ -24,3 +24,26 @@ You're welcome!
    },
 }
 ```
+
+## Example Usage
+If you need to do something custom something like this will let you build your own select.
+
+```php
+/*
+//This example uses Laravel Blade syntax
+//In the controlloer do something like:
+
+$timezones = json_decode(file_get_contents(path('storage').'data/timezones.json'));
+return View::make('home.index')->with('timezones', $timezones);
+*/
+
+<select name="timezone" id="timezone">
+	@foreach($timezones AS $countr_abbr=>$country)
+		<optgroup label="{{ $country->name }}">
+			@foreach($country->timezones AS $php_abbr=>$info)
+				<option value="{{ $php_abbr }}">{{ $info->name }} &nbsp; ({{ $info->abbr }})</option>
+			@endforeach
+		 </optgroup>
+	 @endforeach
+</select>
+```
