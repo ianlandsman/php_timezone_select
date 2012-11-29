@@ -26,7 +26,7 @@ You're welcome!
 ```
 
 ## Example Usage
-If you need to do something custom something like this will let you build your own select.
+You can use the HTML version as is (perhaps some javascript to set the default if needed) but if you need to do something custom you can use the json to have full control.
 
 ```php
 /*
