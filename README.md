@@ -5,6 +5,8 @@ An HTML select list and JSON file of PHP timezones. I've cleaned up a few things
 
 Based on the timezone selection we did for [Snappy](http://www.besnappy.com).
 
+MIT License
+
 You're welcome!
 
 ## JSON Format
