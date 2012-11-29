@@ -11,6 +11,7 @@ You're welcome!
 
 ## JSON Format
 ```json
+{
    "AF":{
       "name":"Afghanistan",
       "timezones":{
@@ -21,4 +22,5 @@ You're welcome!
          }
       }
    },
+}
 ```
